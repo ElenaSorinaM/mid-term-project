@@ -72,7 +72,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 150px;
+    padding: 0 150px;
 }
 /*section photos*/
 .hero-pictures{
@@ -83,23 +83,23 @@ nav a {
 
 .hero-photo{
     max-width: calc(var(--max-width) / 2);
-    width: 67%;
+    width: 100%;
     position: relative;
     top: 0;
     left: 0;
 }
 .card1-photo{
-    width: 30%;
+    width: 40%;
     position: absolute;
     top: 0;
-    left: 10%;
+    left: -5%;
     z-index: 2;
 }
 .card2-photo{
-    width: 30%;
+    width: 40%;
     position: absolute;
     top: 75%;
-    left: 60%;
+    left: 75%;
     z-index: 2;
 }
 
@@ -219,6 +219,7 @@ h3{
     font-size: 17px;
     padding-left: 25px;
 }
+/*Testimonial section*/
 .testimonial-section{
     padding-top: 150px;
     max-width: 1320px;
@@ -304,10 +305,6 @@ h3{
     bottom: auto;
     margin-top: 5%;
     margin-left: 10%;
-    background-image: url(./imagenes/memoji-1.png);
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .memogi1 {
     width: 150px;
@@ -355,4 +352,91 @@ h3{
     bottom: 0%;
     margin-right: 10%;
     margin-bottom: 3%;
+}
+/*Services*/
+
+.services-section{
+    padding-top: 150px;
+    max-width: 1100px; 
+    margin-right: auto;
+    margin-left: auto;
+}
+.grid-services{
+    display: grid;
+    grid-template-columns: repeat(3, 340px); 
+    grid-gap: 35px;
+    height: 380px;
+}
+.service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+}
+.service-card h4{
+    width: 269px;
+    height: 28px;
+    left: 960px;
+    top: 267px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #292E47;
+    padding-left: 10%;
+}
+.service-card p{
+    width: 280px;
+    height: 90px;
+    left: 200px;
+    top: 315px; 
+    padding-left: 10%;
+}
+.service-card a{
+    padding-left: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-decoration: none;
+}
+.service-icon1{
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-radius: 50%;
+    background-image: url(./imagenes/1.svg);
+    background-color: #ecf7ff;
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.service-icon2{
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-radius: 50%;
+    background-image: url(./imagenes/2.svg);
+    background-color: #ecf7ff;
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.service-icon3{
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-radius: 50%;
+    background-image: url(./imagenes/3.svg);
+    background-color: #ecf7ff;
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
