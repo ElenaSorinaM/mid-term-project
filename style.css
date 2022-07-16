@@ -309,3 +309,50 @@ h3{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.memogi1 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.memogi2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    margin-top: 3%;
+    margin-right: 10%;
+
+}
+.memogi3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    padding-left: 0%;
+
+}
+.memogi4 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
