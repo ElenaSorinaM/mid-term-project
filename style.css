@@ -440,3 +440,74 @@ h3{
     background-size: auto;
     background-repeat: no-repeat;
 }
+
+/*CTA SECTION*/
+
+.cta-section{  
+    width: 1320px;
+    height: 100%;
+    max-width: 1320px;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffc600;
+}
+.cta-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+}
+.cta-container h3{
+    display: inline-flex;
+    justify-content: center;
+    color: #292e47;
+    font-size: 40px;
+    margin: 1px;
+}
+.cta-container p {
+    display: inline-flex;
+    justify-content: center;
+    font-size: 17px;
+    line-height: 0px;
+    margin-top: 1px;
+    margin-bottom: 50px;
+}
+.email-form{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content:  space-evenly;
+    align-items: center;
+}
+
+#email{
+    width: 253px;
+    height: 80px;
+    background-color: #F4F6FC;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    background-image: url(./imagenes/mail.svg);
+    background-position: 7% 50%;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding-left: 70px;
+    padding-left: 70px;
+}
+.cta-button{
+    background: #072AC8;
+    width: 150px;
+    height: 80px;
+    left: 950px;
+    top: 0px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    border-style: none;
+}
