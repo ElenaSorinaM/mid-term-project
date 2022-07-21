@@ -215,13 +215,14 @@ p{
 }
 .projects-section {
     padding-top: 150px;
-    width: 100%;
+    max-width: 1100px; 
     margin-right: auto;
     margin-left: auto;
 }
 .recent-projects{
     display: grid;
-    grid-template-columns: repeat(3, 34.5%);   
+    grid-template-columns: repeat(3, 1fr);   
+
 }    
 .project-card{
     display: flex;
