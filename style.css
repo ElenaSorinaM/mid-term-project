@@ -94,17 +94,20 @@ button{
 
 /* HERO SECTION*/
 .container-hero{
-    width: 100%;
+    padding-top: 150px;
+    max-width: 1100px; 
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
-    margin: 0 0;
+
 }
 /*section photos*/
 .hero-pictures{
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -133,14 +136,11 @@ button{
 /*hero-text*/
 h1{
     text-transform: capitalize;
-    width: 530px;
-    height: 210px;
 }
 p{
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    width: 435px;
 }
 .hero-text{
     display: flex;
@@ -163,24 +163,34 @@ p{
 /*HERO SECTION RESPONSIVE DESIGN*/
 @media (max-width:991px){
     .container-hero{
+        max-width: 100%; 
+        margin-right: auto;
+        margin-left: auto;
         display: flex;
         flex-direction:column;
         justify-content: center;
-        align-items: center;} 
-       /* width: 100%;
-      }
+        align-items: center;
+        
+    } 
       .hero-text{
-        display: flex;
-        flex-direction:column;
+        text-align: center;
         justify-content: center;
-      }*/
-      .card1-photo{
-        display: none;
+        align-items: center;
+        
       }
-      .card2-photo{
-        display: none;
+      .cta-hero{
+        display: flex;
       }
-    }     
+       }  
+
+       @media (max-width:767px){
+        .card1-photo{
+            display: none;
+        }
+        .card2-photo{
+            display: none;
+        }
+       }
 
 /* CLIENT SECTION */
 .client-section{
@@ -191,7 +201,11 @@ p{
 }
 .logos {
     display: grid;
-    grid-template-columns: repeat(5, 22.3%);
+    grid-template-columns: repeat(5, 1fr);
+}
+.airbnb, .google, .microsoft, .fedex, .amazon{
+    max-height: 96px;
+    max-width: 150px;
 }
 /*CLIENT SECTION RESPONSIVE DESIGN*/
 @media (max-width:991px){
@@ -199,13 +213,12 @@ p{
         display: none;
     }
     .logos{
-        display: grid;
         justify-items: center;
         align-items: center;
         grid-column-gap: 50px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto;
         grid-row-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
     }
 }
 /* RECENT PROJECTS */
@@ -256,8 +269,24 @@ p{
     padding-left: 25px;
 }
 /*RECENT PROJECTS RESPONSIVE DESIGN*/
-@media (max-width:991px){}
-@media (max-width:767px){}
+@media (max-width:991px){
+    .projects-section h3{
+        text-align: center;
+    }
+    .recent-projects{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+}
+@media (max-width:767px){
+    .recent-projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+}
 
 /*Testimonial section*/
 .testimonial-section{
