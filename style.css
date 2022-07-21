@@ -463,7 +463,7 @@ p{
 }
 .grid-services{
     display: grid;
-    grid-template-columns: repeat(3, 340px); 
+    grid-template-columns: repeat(3, 1fr); 
     grid-gap: 35px;
     height: 380px;
 }
@@ -476,35 +476,34 @@ p{
 .service-card h4{
     width: 269px;
     height: 28px;
-    left: 960px;
-    top: 267px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 24px;
     color: #292E47;
-    padding-left: 10%;
+    margin: 5%;
 }
 .service-card p{
     width: 280px;
     height: 90px;
-    left: 200px;
-    top: 315px; 
-    padding-left: 10%;
+    margin-left: 5%;
+    margin-bottom: 15%;
 }
 .service-card a{
-    padding-left: 10%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 17px;
     text-decoration: none;
+    max-width: 340px;
+    margin: 5%;
+    color: #072AC8;
 }
+
 .service-icon1{
     width: 80px;
     height: 80px;
     margin-top: 40px;
     margin-left: 40px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    margin-bottom: 20px;
     border-radius: 50%;
     background-image: url(./imagenes/1.svg);
     background-color: #ecf7ff;
@@ -517,8 +516,7 @@ p{
     height: 80px;
     margin-top: 40px;
     margin-left: 40px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    margin-bottom: 20px;
     border-radius: 50%;
     background-image: url(./imagenes/2.svg);
     background-color: #ecf7ff;
@@ -531,8 +529,7 @@ p{
     height: 80px;
     margin-top: 40px;
     margin-left: 40px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    margin-bottom: 20px;
     border-radius: 50%;
     background-image: url(./imagenes/3.svg);
     background-color: #ecf7ff;
@@ -541,6 +538,22 @@ p{
     background-repeat: no-repeat;
 }
 
+/*OUR SERVICES RESPONSIVE DESIGN*/
+@media (max-width:991px){
+    .services-section{
+        max-width: 100%;
+    }
+}
+@media (max-width:767px){
+    .services-section{
+        text-align: center;
+    }
+    .grid-services{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+}
 
 /*CTA SECTION*/
 
