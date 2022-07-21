@@ -288,66 +288,55 @@ p{
     }
 }
 
-/*Testimonial section*/
+/*TESTIMONIAL SECTION*/
 .testimonial-section{
-    padding-top: 150px;
-    max-width: 1320px;
     position: relative;
-    height: 490px;
+    height: 622px;
     margin-top: 200px;
     margin-right: auto;
     margin-left: auto;
     background-color: #292e47;
     background-image: url(./imagenes/orbit.png);
-    background-position: center;
-    background-size:contain;
+    background-position: 0px 0px;
+    background-size: contain;
 }
-.container-testimonial{
-    position: relative;
+.testimonial-text{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    top: -20%;
+    padding-top: 50px;
 }
 
 .testimonial-text h3{
-    width: 621x;
-    height: 47px;
-    left: 240px;
-    top: 0px;
-    padding-bottom: 90px;
-    font-family: 'Roboto', sans-serif;
     color: #F4F6FC;
     font-weight: 700;
     font-size: 40px;
     text-align: center;
+    padding-bottom: 70px;
 }
 .testimonial-text p{
-    width: 596px;
-    height: 76px;
-    left: 256px;
-    top: 151px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 160%;
     text-align: center;
     color: #FFC600;
-    padding-bottom: 150px;
+    width: 596px;
+    height: 76px;
 }
-.client {
+.testimonial-text .client {
     width: 171px;
     height: 50px;
-    left: 465px;
-    top: 332px;
     display: flex;
     align-items: center;
+    padding-top: 130px;
 }
 .client-picture{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    position: 50% 50%;
 }
 .client-name h5{
     font-family: 'Roboto', sans-serif;
