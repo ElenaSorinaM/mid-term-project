@@ -558,39 +558,35 @@ p{
 /*CTA SECTION*/
 
 .cta-section{  
-    height: 100%;
+    width: 1320px;
+    height: 500px;
     max-width: 1320px;
     margin-top: 200px;
     margin-right: auto;
     margin-left: auto;
     background-color: #ffc600;
-}
-.cta-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8%;
+    justify-content: center
 }
+
 .cta-container h3{
-    display: inline-flex;
-    justify-content: center;
     color: #292e47;
     font-size: 40px;
     margin: 1px;
 }
 .cta-container p {
-    display: inline-flex;
-    justify-content: center;
+    text-align: center;
     font-size: 17px;
     line-height: 0px;
-    margin-top: 1px;
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 .email-form{
     display: flex;
-    width: 50%;
     flex-direction: row;
-    justify-content:  space-evenly;
+    justify-content:  center;
     align-items: center;
 }
 
@@ -613,10 +609,10 @@ p{
 }
 .cta-button{
     background: #072AC8;
-    width: 150px;
     height: 80px;
-    left: 950px;
-    top: 0px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-left: 20px;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
