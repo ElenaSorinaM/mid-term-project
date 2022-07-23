@@ -6,8 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    
+    <!-- NAVIGATION BAR --> 
+
+ <nav class="nav-bar">
+    <img class="circle-logo" src="imagenes\circle.svg">
+    <ul class="nav-links">
+        <li><a class="blue-link" href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+    <div><button class="nav-button">Contact us</button></div> <!-- change button color with js-->
+</nav>
+
+<!--CONTACT SECTION-->
+
+<div class="contactus-section">
+    <h1>Contact us</h1>
+    <div class="full-name">
+        <p>Full Name *</p>
+        <input type="text" placeholder="Enter your full name" class="input">
+      </div>
+
+      <div class="contact-info">
+        <p class="email-text">Email</p><p class="tel-text">Phone</p> 
+        <input type="email" placeholder="Enter your email" class="input">
+        <input type="tel" placeholder="Enter your phone" class="input">
+      </div>
+      <div class="msg">
+        <p>Message *</p>
+        <textarea  class="area" placeholder="Write your message here..."></textarea>
+      </div>
+      
+      <button class="contact-button">Submit</button>
+    </div>
+
+     <!-- FOOTER SECTION -->
+ <div class="footer-section">
+    <!-- logo and address -->
+    <div class="footer-content">
+        <img class="footer-logo" src="imagenes\circle.svg">
+        <p class="footer-paragraph">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+    </div>
+        <!-- links -->
+        <div class="footer-links">
+            <a href="#">Team</a>
+            <a href="#">Services</a>
+            <a href="#">About us</a>
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy policy</a>
+    </div>
+</div>
+
 </body>
 </html>

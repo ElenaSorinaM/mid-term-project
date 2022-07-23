@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body{
+    background-color: #F2F4FC;
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.contactus-section{
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction:column;
+   
+}
+.input,
+.msg .area{
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 17px;
+
+  background-color: rgba(107, 112, 141, 0.1);
+}
+.msg .area{
+    height: 200px;
+  }
+  .contact-button{
+    height: 70px;
+    width: 105%;
+    align-items: center;
+  }
+
+  .contact-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 1px;
+  }
+  .email .input{
+    width: 100px;
+  }
