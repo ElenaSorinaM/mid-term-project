@@ -7,40 +7,54 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
 </head>
 <body>
     <!-- NAVIGATION BAR --> 
 
- <nav class="nav-bar">
-    <img class="circle-logo" src="imagenes\circle.svg">
-    <ul class="nav-links">
-        <li><a class="blue-link" href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Services</a></li>
-    </ul>
-    <div><button class="nav-button">Contact us</button></div> <!-- change button color with js-->
-</nav>
+    <header class="header">
+        <nav class="nav">
+          <img class="circle-logo" src="imagenes\circle.svg">
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link nav-link">Home</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link nav-link">Projects</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link nav-link">Services</a>
+            </li>
+          </ul>
+          <div><button class="nav-button">Contact us</button></div>
+        </nav>
+      </header>
 
 <!--CONTACT SECTION-->
 
 <div class="contactus-section">
     <h1>Contact us</h1>
+    <div id="error"></div>
+    <form id="contact-form">
     <div class="full-name">
         <p>Full Name *</p>
-        <input type="text" placeholder="Enter your full name" class="input">
+        <input type="text" id="fullname" placeholder="Enter your full name" class="input" required>
       </div>
 
       <div class="contact-info">
-        <p class="email-text">Email</p><p class="tel-text">Phone</p> 
-        <input type="email" placeholder="Enter your email" class="input">
+        <p class="email-text">Email*</p><p class="tel-text">Phone</p> 
+        <input type="email" id ="e-mail" placeholder="Enter your email" class="input" required>
         <input type="tel" placeholder="Enter your phone" class="input">
       </div>
       <div class="msg">
         <p>Message *</p>
-        <textarea  class="area" placeholder="Write your message here..."></textarea>
+        <textarea  class="area" id="msg" placeholder="Write your message here..." required></textarea>
       </div>
-      
-      <button class="contact-button">Submit</button>
+      </form>
+      <button class="contact-button" type="submit" form="contact-form">Submit</button>
     </div>
 
      <!-- FOOTER SECTION -->
