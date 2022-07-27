@@ -5,39 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
-    <script src="contact.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
+    <script defer src="./contact.js"></script>
+    
 </head>
 <body>
     <!-- NAVIGATION BAR --> 
 
-    <header class="header">
-        <nav class="nav">
-          <img class="circle-logo" src="imagenes\circle.svg">
-          <button class="nav-toggle" aria-label="Abrir menú">
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a href="#" class="nav-menu-link nav-link">Home</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="#" class="nav-menu-link nav-link">Projects</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="#" class="nav-menu-link nav-link">Services</a>
-            </li>
-          </ul>
-          <div><button class="nav-button">Contact us</button></div>
-        </nav>
-      </header>
-
+    <nav class="nav-bar">
+      <img class="circle-logo" src="./imagenes/circle.svg">
+      <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./project-page.html">Projects</a></li>
+          <li><a href="#">Services</a></li>
+      </ul>
+      <div class="hamburger">
+      </div>
+      <div><button class="nav-button"><a class="navbutton" href="./contact.html">Contact us</a></button></div>
+  </nav>
 <!--CONTACT SECTION-->
 
 <div class="contactus-section">
     <h1>Contact us</h1>
-    <div id="error"></div>
+    
     <form id="contact-form">
     <div class="full-name">
         <p>Full Name *</p>
@@ -56,12 +47,13 @@
       </form>
       <button class="contact-button" type="submit" form="contact-form">Submit</button>
     </div>
+    <div class="result">none</div>
 
      <!-- FOOTER SECTION -->
  <div class="footer-section">
     <!-- logo and address -->
     <div class="footer-content">
-        <img class="footer-logo" src="imagenes\circle.svg">
+        <img class="footer-logo" src="./imagenes/circle.svg">
         <p class="footer-paragraph">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
     </div>
         <!-- links -->
@@ -74,6 +66,6 @@
             <a href="#">Privacy policy</a>
     </div>
 </div>
-
+<script src="./contact.js"></script>
 </body>
 </html>
