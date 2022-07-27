@@ -212,14 +212,18 @@ button{
 .navbutton{
     color: white;
 }
-
+@media (max-width:991px){
+    .project-pic{
+        max-width: 100%;
+    }
+}
 /*NAV BAR RESPONSIVE DESIGN*/
 
 @media (max-width:991px){
     .nav-bar {
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        max-width: 100%;
         margin-top: 60px;
   }
   .nav-links {
@@ -777,15 +781,15 @@ p{
         flex-direction: column;
     }
     #email{
-        max-width: 309px;
+        max-width: 100%;
+        width: 84%;
         height: 80px;
-
     }
     .cta-button{
         width: 100%;
-        max-width: 100%;
         margin-top: 20px;
         margin-left: 0px;
+        
     }
 }
 
